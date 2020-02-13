@@ -1,7 +1,7 @@
 {
   "name": "react-native-apple-signin-package",
   "title": "React Native Apple Signin package",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Support Apple Signin for react native.",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-apple-signin-package.git",
-    "baseUrl": "https://github.com/github_account/react-native-apple-signin-package"
+    "url": "git+https://github.com/EasonLex/RNAppleSigninModule.git",
+    "baseUrl": "https://github.com/EasonLex/RNAppleSigninModule"
   },
   "keywords": [
     "react-native"
