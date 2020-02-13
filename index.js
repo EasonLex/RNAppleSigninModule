@@ -11,7 +11,7 @@ export const SignInWithAppleWhiteButton = (buttonStyle, nativeStyle, callBack) =
     if(Platform.OS === 'ios'){
         return <RNSignInWithAppleWhiteButton style={buttonStyle} 
                                              nativeStyle={nativeStyle}
-                                             onPress={() => { appleSigninAuthRequest() }} 
+                                             onPress={() => { appleSigninAuthRequest(callBack) }} 
                />
     } else {
         return null
@@ -22,7 +22,7 @@ export const SignInWithAppleBlackButton = (buttonStyle, nativeStyle, callBack) =
     if(Platform.OS === 'ios'){
         return <RNSignInWithAppleBlackButton style={buttonStyle} 
                                              nativeStyle={nativeStyle}
-                                             onPress={() => { appleSigninAuthRequest() }} 
+                                             onPress={() => { appleSigninAuthRequest(callBack) }} 
                />
     } else {
         return null
@@ -33,14 +33,14 @@ export const SignInWithAppleOutlineButton = (buttonStyle, nativeStyle, callBack)
     if(Platform.OS === 'ios'){
         return <RNSignInWithAppleOutlineButton style={buttonStyle} 
                                                nativeStyle={nativeStyle}
-                                               onPress={() => { appleSigninAuthRequest() }} 
+                                               onPress={() => { appleSigninAuthRequest(callBack) }} 
                />
     } else {
         return null
     }
 }
 
-const appleSigninAuthRequest = async () => {
+const appleSigninAuthRequest = async (callBack) => {
     await AppleSigninModule.requestAsync({ scopes: [AppleSigninModule.Scope.FULL_NAME, AppleSigninModule.Scope.EMAIL],})
     .then((response) => {
         callBack(response) //Display response

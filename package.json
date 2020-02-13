@@ -1,23 +1,23 @@
 {
-  "name": "react-native-apple-signin-module",
-  "title": "React Native Apple Signin Module",
-  "version": "1.0.0",
-  "description": "TODO",
+  "name": "react-native-apple-signin-package",
+  "title": "React Native Apple Signin package",
+  "version": "0.0.2",
+  "description": "Support Apple Signin for react native.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-apple-signin-module.git",
-    "baseUrl": "https://github.com/github_account/react-native-apple-signin-module"
+    "url": "git+https://github.com/github_account/react-native-apple-signin-package.git",
+    "baseUrl": "https://github.com/github_account/react-native-apple-signin-package"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "EthanLin",
+    "email": "easonlex@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
